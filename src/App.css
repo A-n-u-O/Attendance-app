@@ -1,0 +1,92 @@
+/* styles.css */
+body{
+  background-image: url(./assets/attendance.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+.attendance-app {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f0f0f0;
+  padding: 10%;
+  margin: 30px 45px 30px 45px;
+  height: auto;
+  border: 2px solid #ff3333;
+  border-top-left-radius: 40%;
+  background-color: rgb(168, 109, 65);
+}
+
+header {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+
+.container {
+  width: auto;
+}
+
+.container form{
+  /* background-color: rgb(255, 166, 0); */
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.container form input{
+  background-color: antiquewhite;
+  width: 650px;
+  height: 25px;
+}
+
+.container form button{
+  padding: 1%;
+  width: 150px;
+  background-color: rgba(247, 79, 79, 0.492);
+  margin: 20px 5px 20px 5px; 
+}
+
+.attendance-list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.search input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.attendance {
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #9c6262;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.attendance button{
+  
+}
+
+.no-match {
+  padding: 10px;
+  background-color: #ffe6e6;
+  border: 1px solid #ffcccc;
+  border-radius: 5px;
+  color: #ff3333;
+}
