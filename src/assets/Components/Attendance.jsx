@@ -50,8 +50,8 @@ const Attendance = ({ addAttendance}) => {
                                     <div className="attendance" key={index}>
                                         <div className="list list-name">NAME : {attendanceItem.name}</div>
                                         <div className="list list-class">CLASS : {attendanceItem.classValue}</div>
-                                        <div className="list list-date">Date:  {attendanceItem.year} {' - '}{attendanceItem.month} {' - '} {attendanceItem.day}{' - '}{attendanceItem.hours} {':'} {attendanceItem.minutes} {':'} {attendanceItem.seconds}</div>
-                                        <div className="list list-time">Time:  {attendanceItem.year} {' - '}{attendanceItem.month} {' - '} {attendanceItem.day}{' - '}{attendanceItem.hours} {':'} {attendanceItem.minutes} {':'} {attendanceItem.seconds}</div>
+                                        <div className="list list-date">Date:  {attendanceItem.year} {' - '}{attendanceItem.month} {' - '} {attendanceItem.day}</div>
+                                        <div className="list list-time">Time:  {attendanceItem.hours} {':'} {attendanceItem.minutes} {':'} {attendanceItem.seconds}</div>
                                         <button className="delete" onClick={()=>{handleDelete(attendanceItem.id)}}><FontAwesomeIcon icon={faTrashAlt} /></button>                    
                                     </div>
                                 )) : (
