@@ -45,12 +45,12 @@ const Form = ({ setAttendanceDetails }) => {
         <form onSubmit={addAttendance}>
             <div className="form-group">
                 <label htmlFor="name">Name</label><br/>
-                <input name="name" value={name} type="text" placeholder="full name" onChange={(e) => setName(e.target.value)} required />
+                <input name="name" value={name} type="text" placeholder="Full name" onChange={(e) => setName(e.target.value)} required />
             </div>
 
             <div className="form-group">
                 <label htmlFor="class">Class</label><br/>
-                <input name="class" value={classValue} type="text" placeholder="class" onChange={(e) => setClassValue(e.target.value)} required />
+                <input name="class" value={classValue} type="text" placeholder="Class" onChange={(e) => setClassValue(e.target.value)} required />
             </div>
 
             <button type="submit">Enter</button>

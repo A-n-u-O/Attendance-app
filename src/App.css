@@ -1,8 +1,7 @@
 /* Neon Color Theme */
 body {
   margin: auto;
-  background: linear-gradient(45deg, #F7F8F3, #F7464E);
-  color: #F7F8F3;
+  background: #146C94;
 }
 
 .attendance-app {
@@ -20,7 +19,7 @@ header {
   letter-spacing: 5px;
   font-weight: 800;
   padding: 10px;
-  color: #F7F8F3;
+  color: #F6F1F1;
 }
 
 .container {
@@ -36,42 +35,42 @@ header {
   flex-direction: column;
   margin-bottom: 20px;
   text-align: center;
-  background-color: #78BCC4; /* Purple */
+  background-color: #2cd3e1; /* Purple */
   color: #002C3E;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container form input {
-  background-color: #2cd3e1;
   width: 650px;
   height: 35px;
   border: none;
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 8px;
 }
 
 .container form button {
   padding: 1%;
   width: 150px;
-  background-color: #2cd3e1;
+  background-color: #146C94;
   margin: 20px 5px 20px 5px;
   cursor: pointer;
   color: #002C3E;
   border: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .container form button:hover{
-  background-color: #78BCC4;
-  transform: scale(1.5);
+  background-color: #AFD3E2;
+  transform: translateY(-2px);
 }
 
 .attendance-list {
-  background-color: #002C3E;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-height: 300px;
+  max-height: 350px;
   overflow-y: auto;
-  width: 700px;
+  width: 900px;
   color: #F7F8F3;
 }
 
@@ -80,13 +79,14 @@ header {
 }
 
 .search input {
-  width: 80%;
+  width: 95%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #002C3E;
   border-radius: 5px;
   margin-bottom: 10px;
   background-color: #F7F8F3; 
+  border: none;
 }
 
 .attendance {
@@ -98,20 +98,26 @@ header {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  border: none;
 }
 
 .attendance button {
-  background-color: #002C3E; 
+  background-color: #146C94;
   cursor: pointer;
-  color: #ffffff;
+  color: #002C3E;
+  border: none;
   border-radius: 20px;
   margin-top: 2px;
+  height: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+.attendance button:hover{
+  transform:scaleX(0.9) ;
+}
 .no-match {
   padding: 10px;
   background-color: #ffe6e6;
   border: 1px solid #ffcccc;
   border-radius: 5px;
-  color: #ff3333;
 }

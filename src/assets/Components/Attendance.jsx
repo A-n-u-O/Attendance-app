@@ -43,12 +43,12 @@ const Attendance = ({ addAttendance}) => {
                         <div className="attendance-list">
                             <h1>Attendance List</h1>
                             <div className="search">
-                                <input name="search" value={search} placeholder="search name..." onChange={(e) => setSearch(e.target.value)} />
+                                <input name="search" value={search} placeholder="search by name..." onChange={(e) => setSearch(e.target.value)} />
                             </div>
                             <ol>
                                 {filteredAttendance.length > 0 ? filteredAttendance.map((attendanceItem, index) => (
                                     <div className="attendance" key={index}>
-                                        <div className="list list-name">NAME : {attendanceItem.name}</div>
+                                        <div className="list list-name"> <span style={{color: 'black'}}>{index+1}. </span> NAME : {attendanceItem.name}</div>
                                         <div className="list list-class">CLASS : {attendanceItem.classValue}</div>
                                         <div className="list list-date">Date:  {attendanceItem.year} {' - '}{attendanceItem.month} {' - '} {attendanceItem.day}</div>
                                         <div className="list list-time">Time:  {attendanceItem.hours} {':'} {attendanceItem.minutes} {':'} {attendanceItem.seconds}</div>
